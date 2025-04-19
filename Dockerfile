@@ -16,4 +16,4 @@ COPY rclone.conf /home/app/.config/rclone/rclone.conf
 
 EXPOSE 8080
 
-CMD ["rclone", "serve", "webdav", "b2remote:takahirodb", "--addr", ":8080", "--user", "youruser", "--pass", "yourpass"]
+CMD ["rclone", "serve", "webdav", "b2remote:takahirodb", "--addr", ":443", "--user", "youruser", "--pass", "yourpass"]
